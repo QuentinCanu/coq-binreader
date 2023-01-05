@@ -12,5 +12,6 @@
  (name coq-binreader)
  (depends
   (ocaml (>= 4.08.0))
-  (coq (and (>= 8.16) (< 8.17))))
+  (coq (and (>= 8.16) (< 8.17)))
+  (coq-bignums (and (>= 8.16) (< 8.17))))
 )
