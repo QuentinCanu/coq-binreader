@@ -1,0 +1,12 @@
+(library
+ (name binreader_plugin)
+ (public_name coq-binreader.plugin)
+ (synopsis "BinReader plugin")
+ (flags :standard -rectypes -w -27)
+ (foreign_stubs
+  (language c)
+  (names fls_63))
+ (libraries coq-core.vernac coq-core.plugins.ltac))
+
+(coq.pp
+ (modules binreader_g))

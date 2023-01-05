@@ -1,0 +1,11 @@
+DECLARE PLUGIN "binreader.plugin"
+
+{
+  open Stdarg
+}
+
+VERNAC COMMAND EXTEND LoadIntArray CLASSIFIED AS SIDEFF
+| [ "LoadData" string(filename) "As" ident(x) ] -> {
+    Binreader.load_and_define_data_from_file filename x
+  }
+END

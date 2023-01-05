@@ -1,0 +1,6 @@
+(include_subdirs qualified)
+
+(coq.theory
+ (name BinReader)
+ (package coq-binreader)
+ (libraries coq-binreader.plugin))
