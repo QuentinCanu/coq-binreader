@@ -3,7 +3,7 @@ depends: [
   "dune" {>= "3.0"}
   "ocaml" {>= "4.08.0"}
   "coq" {>= "8.16" & < "8.17"}
-  "coq-bignums" {= "dev"}
+  "coq-bignums" {>= "9.0"}
   "odoc" {with-doc}
 ]
 build: [
